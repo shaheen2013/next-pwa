@@ -1,27 +1,60 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #fff;
+}
+
+.container-pwa{
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.shadow-md{
+  box-shadow: 0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+.card-item{
+  position: relative;
+}
+
+.card-item:last-child img{
+  width: 98%;
+  margin: 0 auto;
+}
+
+.card-details{
+  width: 92%;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -10%);
+  text-align: center;
+  color: #e8ce92;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  margin-top: 1.5rem;
+  border-radius: 10% 10% 10% 10%;
+  height: 93%;
+}
+
+.card-details-separator{
+  width: 100%;
+  height: 3px;
+  background-color: #e8ce92;
+}
+
+.counter{
+  background-color: #e8ce92;
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.w-2{
+  width: 2rem;
+}
+
+.w-3{
+  width: 3rem;
 }
